@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code to Career - CTOC</title>
+    <title>Code to Career - CTOC | Career & Digital Solutions</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Code to Career (CTOC) helps students become placement-ready with ATS resumes, LinkedIn optimization, portfolio websites, and placement guidance. Starting from ₹49!">
+    <meta name="keywords" content="Code to Career, CTOC, career guidance, resume building, LinkedIn optimization, portfolio website, placement guidance, fresher jobs, student career, ATS resume">
+    <meta name="author" content="Code to Career - CTOC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (WhatsApp, Facebook, Instagram preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Code to Career - CTOC | Career & Digital Solutions">
+    <meta property="og:description" content="Code to Career (CTOC) helps students become placement-ready with ATS resumes, LinkedIn optimization, portfolio websites, and placement guidance. Starting from ₹49!">
+    <meta property="og:url" content="https://ctoc-careers.github.io">
+    <meta property="og:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta property="og:site_name" content="Code to Career - CTOC">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Code to Career - CTOC | Career & Digital Solutions">
+    <meta name="twitter:description" content="Code to Career (CTOC) helps students become placement-ready with ATS resumes, LinkedIn optimization, portfolio websites, and placement guidance. Starting from ₹49!">
+    <meta name="twitter:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+
     <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
     <link rel="stylesheet" href="./styles.css">
+    <script>if(localStorage.getItem('ctoc_theme')==='light')document.documentElement.setAttribute('data-theme','light');</script>
 </head>
 <body>
-    <nav class="navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-left">
                 <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
@@ -29,26 +52,30 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-video-wrap">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="./assets/background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="hero-badge">🚀 Career & Digital Solutions</span>
-            <h1 class="hero-title">
-                No Experience?<br>
-                <span class="highlight">No Problem.</span>
-            </h1>
-            <p class="hero-sub">
-                Build Real Projects. Create Your Portfolio.<br>
-                Crack Placements — Start Today!
-            </p>
+            <h1 class="hero-title">No Experience?<br><span class="highlight">No Problem.</span></h1>
+            <p class="hero-sub">Build Real Projects. Create Your Portfolio.<br>Crack Placements — Start Today!</p>
             <div class="hero-tags">
                 <span>✅ Resume Setup</span>
                 <span>✅ LinkedIn Profile</span>
                 <span>✅ Portfolio Website</span>
                 <span>✅ Placement Guidance</span>
             </div>
+            <div class="hero-price-badge">
+                🎯 Career packages starting from <strong>₹49</strong>
+            </div>
             <div class="hero-btns">
                 <a href="https://instagram.com/ctoc_careers" class="btn-primary" target="_blank">DM to Get Started →</a>
-                <a href="services.html" class="btn-secondary">Our Services</a>
+                <a href="pricing.html" class="btn-secondary">View Pricing</a>
             </div>
         </div>
         <div class="hero-image">
@@ -58,50 +85,195 @@
                     <span>Code to Career</span>
                 </div>
                 <div class="card-stats">
-                    <div class="stat">
-                        <h3>🎯</h3>
-                        <p>Career Focused</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Beginner Friendly</p>
-                    </div>
-                    <div class="stat">
-                        <h3>🔥</h3>
-                        <p>Real Projects</p>
-                    </div>
+                    <div class="stat"><h3>🎯</h3><p>Career Focused</p></div>
+                    <div class="stat"><h3>100%</h3><p>Beginner Friendly</p></div>
+                    <div class="stat"><h3>🔥</h3><p>Real Projects</p></div>
                 </div>
                 <p class="card-tag">📍 Online • India</p>
             </div>
         </div>
     </section>
 
-    <!-- Why CTOC -->
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview section">
+        <div class="section-container">
+            <span class="section-badge">What We Offer</span>
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <p class="section-sub">Everything you need to kickstart your career — all in one place.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">📄</span>
+                    <h3>Resume & ATS Setup</h3>
+                    <p>Professional resume designed to pass ATS filters and impress recruiters.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🌐</span>
+                    <h3>Portfolio Website</h3>
+                    <p>Custom portfolio website to showcase your skills and projects online.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💼</span>
+                    <h3>LinkedIn Optimization</h3>
+                    <p>Profile setup that attracts recruiters and builds your professional network.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🎯</span>
+                    <h3>Placement Guidance</h3>
+                    <p>Step-by-step support to crack interviews and land your first job.</p>
+                </div>
+                <div class="service-card highlight-card">
+                    <span class="service-icon">🔥</span>
+                    <h3>MERN & AI/ML Bootcamp</h3>
+                    <p>Full stack and AI/ML bootcamps coming soon — stay tuned!</p>
+                    <span class="coming-soon">Coming Soon</span>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏆</span>
+                    <h3>Certificate Programs</h3>
+                    <p>Earn industry-recognized CTOC certificates — perfect for LinkedIn & resume.</p>
+                    <a href="certificate.html" class="btn-primary" style="margin-top:16px; font-size:14px; padding:10px 20px; display:inline-block;">View Certificates →</a>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:40px;">
+                <a href="services.html" class="btn-primary">View All Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CTOC -->
     <section class="why-section">
         <div class="section-container">
             <span class="section-badge">Why Choose Us</span>
             <h2 class="section-title">Why <span class="highlight">CTOC?</span></h2>
             <div class="why-grid">
-                <div class="why-card">
-                    <span>❌</span>
-                    <h3>No Experience Needed</h3>
-                    <p>Start from absolute zero — we guide you every step of the way.</p>
+                <div class="why-card"><span>❌</span><h3>No Experience Needed</h3><p>Start from absolute zero — we guide you every step of the way.</p></div>
+                <div class="why-card"><span>💻</span><h3>No Laptop? No Problem</h3><p>We work with what you have. Mobile-friendly guidance available.</p></div>
+                <div class="why-card"><span>🎓</span><h3>Beginner Friendly</h3><p>Simple, clear steps made for students with zero coding background.</p></div>
+                <div class="why-card"><span>🚀</span><h3>Real Growth</h3><p>Small steps today = Big career growth tomorrow. Start now!</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section">
+        <div class="section-container">
+            <span class="section-badge">Student Reviews</span>
+            <h2 class="section-title">What Students <span class="highlight">Say</span></h2>
+            <p class="section-sub">Real students, real results — hear from those who started with zero and landed their first job.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Beginnee ku easy project freshers to senior's To career improve ment very very use ful of the code to careers ⭐⭐⭐⭐⭐⭐⭐ ,Very use ful ⭐⭐⭐⭐⭐⭐⭐⭐,Than you for the beginners to improve Career thank to you code to career 👍🙏"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">G</div>
+                        <div>
+                            <h4>M.GUNASEKARAN</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="why-card">
-                    <span>💻</span>
-                    <h3>No Laptop? No Problem</h3>
-                    <p>We work with what you have. Mobile-friendly guidance available.</p>
+                <div class="testimonial-card featured-testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"CTOC's ₹149 package was the best investment I made. Resume, LinkedIn, interview prep — everything in one place. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background:#10b981;">P</div>
+                        <div>
+                            <h4>Priya M</h4>
+                            <span>Student → Web Developer</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="why-card">
-                    <span>🎓</span>
-                    <h3>Beginner Friendly</h3>
-                    <p>Simple, clear steps made for students with zero coding background.</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"lots of Thanks Bro ❤️"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background:#8b5cf6;">R</div>
+                        <div>
+                            <h4>Dinesh K</h4>
+                            <span>BSc Graduate → Placed</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="why-card">
-                    <span>🚀</span>
-                    <h3>Real Growth</h3>
-                    <p>Small steps today = Big career growth tomorrow. Start now!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq-section section">
+        <div class="section-container">
+            <span class="section-badge">Got Questions?</span>
+            <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+            <p class="section-sub">Everything you need to know about CTOC — answered!</p>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1" class="faq-toggle">
+                    <label for="faq1" class="faq-question">
+                        What is Code to Career (CTOC)?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Code to Career (CTOC) is a student-friendly education platform that helps freshers and students become placement-ready. We offer resume building, LinkedIn optimization, portfolio websites, placement guidance and more — all at budget-friendly prices starting from just ₹49!</p>
+                    </div>
                 </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2" class="faq-toggle">
+                    <label for="faq2" class="faq-question">
+                        How much does it cost?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Our plans start from just ₹49! We have 4 career packages — ₹49, ₹149, ₹299 and ₹499 — each designed for different stages of your placement journey. Check our <a href="pricing.html" style="color:#f59e0b;">Pricing page</a> for full details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3" class="faq-toggle">
+                    <label for="faq3" class="faq-question">
+                        Do I need prior experience or coding skills?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Absolutely not! CTOC is 100% beginner friendly. No experience, no coding skills, no laptop — we work with what you have. Our motto is "No Experience? No Problem." We guide you from zero to career-ready!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4" class="faq-toggle">
+                    <label for="faq4" class="faq-question">
+                        How long does the process take?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>It depends on the package you choose. Resume setup can be done within 24-48 hours. Full career packages like portfolio + LinkedIn + placement guidance take 3-7 days. We work at your pace!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq5" class="faq-toggle">
+                    <label for="faq5" class="faq-question">
+                        Will I get a certificate?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Yes! Selected packages include an official CTOC Workshop Participation Certificate — perfect for your LinkedIn profile and resume. Check our <a href="certificate.html" style="color:#f59e0b;">Certificate page</a> for details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" id="faq6" class="faq-toggle">
+                    <label for="faq6" class="faq-question">
+                        How do I contact CTOC?
+                        <span class="faq-icon">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>You can reach us on Instagram <a href="https://instagram.com/ctoc_careers" target="_blank" style="color:#f59e0b;">@ctoc_careers</a> or WhatsApp us at <a href="https://wa.me/916383847631" target="_blank" style="color:#f59e0b;">6383847631</a>. We respond quickly — DM us to get started!</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -115,6 +287,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -127,23 +300,52 @@
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
+                <a href="pricing.html">Pricing</a>
             </div>
         </div>
         <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
     </footer>
 
-    <script>
-      const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/916383847631" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        💬
+    </a>
 
-document.querySelector('.hamburger').addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-});
-// Auto dark/light mode based on system
-if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    document.body.classList.add('light');
-    document.querySelector('.toggle-btn').textContent = '☀️';
-}
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script>
+        const btn = document.querySelector('.toggle-btn');
+        if (localStorage.getItem('ctoc_theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = '☀️';
+        } else {
+            btn.textContent = '🌙';
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            if (document.body.classList.contains('light')) {
+                localStorage.setItem('ctoc_theme', 'light');
+                document.documentElement.setAttribute('data-theme', 'light');
+                btn.textContent = '☀️';
+            } else {
+                localStorage.setItem('ctoc_theme', 'dark');
+                document.documentElement.removeAttribute('data-theme');
+                btn.textContent = '🌙';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 300);
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(l => {
+            l.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
     </script>
 </body>
 </html>

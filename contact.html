@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - CTOC</title>
+    <title>Contact - Code to Career CTOC</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Code to Career (CTOC) on Instagram @ctoc_careers or WhatsApp 6383847631. Quick response guaranteed!">
+    <meta name="keywords" content="contact CTOC, Code to Career contact, ctoc_careers Instagram, CTOC WhatsApp">
+    <meta name="author" content="Code to Career - CTOC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (WhatsApp, Facebook, Instagram preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact - Code to Career CTOC">
+    <meta property="og:description" content="Contact Code to Career (CTOC) on Instagram @ctoc_careers or WhatsApp 6383847631. Quick response guaranteed!">
+    <meta property="og:url" content="https://ctoc-careers.github.io/contact.html">
+    <meta property="og:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta property="og:site_name" content="Code to Career - CTOC">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Code to Career CTOC">
+    <meta name="twitter:description" content="Contact Code to Career (CTOC) on Instagram @ctoc_careers or WhatsApp 6383847631. Quick response guaranteed!">
+    <meta name="twitter:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+
     <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
     <link rel="stylesheet" href="./styles.css">
+
+    <script>localStorage.getItem('ctoc_theme')==='light'&&document.documentElement.setAttribute('data-theme','light');</script>
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +45,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
                 <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
             </ul>
         </div>
@@ -38,6 +61,13 @@
 
     <section class="section">
         <div class="section-container">
+            <!-- Response time info -->
+            <div class="response-info">
+                <div class="response-item"><span>⚡</span><p>Instagram DM — Reply within <strong>1-2 hours</strong></p></div>
+                <div class="response-item"><span>💬</span><p>WhatsApp — Reply within <strong>30 minutes</strong></p></div>
+                <div class="response-item"><span>🕐</span><p>Working hours — <strong>9 AM to 9 PM</strong> (Mon-Sat)</p></div>
+            </div>
+
             <div class="contact-grid">
                 <div class="contact-card">
                     <span class="contact-icon">📸</span>
@@ -49,9 +79,9 @@
                     <span class="contact-icon">💬</span>
                     <h3>WhatsApp</h3>
                     <p>Direct chat for quick responses</p>
-                    <a href="https://wa.me/916383847631" target="_blank" class="btn-primary">Chat Now →</a>
+                    <a href="https://wa.me/916383847000" target="_blank" class="btn-primary">Chat Now →</a>
                 </div>
-                
+              
             </div>
         </div>
     </section>
@@ -68,23 +98,52 @@
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
+                <a href="pricing.html">Pricing</a>
             </div>
         </div>
-        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+        <p class="footer-copy">© 2024 Code to Career - CTOC. All rights reserved.</p>
     </footer>
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/916383847631" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+        const btn = document.querySelector('.toggle-btn');
+        if (localStorage.getItem('ctoc_theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = '☀️';
+        } else {
+            btn.textContent = '🌙';
+        }
 
-document.querySelector('.hamburger').addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-});
-// Auto dark/light mode based on system
-if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    document.body.classList.add('light');
-    document.querySelector('.toggle-btn').textContent = '☀️';
-}
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            if (document.body.classList.contains('light')) {
+                localStorage.setItem('ctoc_theme', 'light');
+                document.documentElement.setAttribute('data-theme', 'light');
+                btn.textContent = '☀️';
+            } else {
+                localStorage.setItem('ctoc_theme', 'dark');
+                document.documentElement.removeAttribute('data-theme');
+                btn.textContent = '🌙';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if(nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(l => {
+            l.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
     </script>
 </body>
 </html>

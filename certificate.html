@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate - CTOC</title>
+    <title>Certificates - Code to Career CTOC</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Earn industry-recognized CTOC certificates. Complete our programs and get certified — perfect for LinkedIn and resume.">
+    <meta name="keywords" content="CTOC certificate, career certificate, placement certificate, workshop certificate">
+    <meta name="author" content="Code to Career - CTOC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (WhatsApp, Facebook, Instagram preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Certificates - Code to Career CTOC">
+    <meta property="og:description" content="Earn industry-recognized CTOC certificates. Complete our programs and get certified — perfect for LinkedIn and resume.">
+    <meta property="og:url" content="https://ctoc-careers.github.io/certificate.html">
+    <meta property="og:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta property="og:site_name" content="Code to Career - CTOC">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Certificates - Code to Career CTOC">
+    <meta name="twitter:description" content="Earn industry-recognized CTOC certificates. Complete our programs and get certified — perfect for LinkedIn and resume.">
+    <meta name="twitter:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+
     <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
     <link rel="stylesheet" href="./styles.css">
+
+    <script>localStorage.getItem('ctoc_theme')==='light'&&document.documentElement.setAttribute('data-theme','light');</script>
 </head>
 <body>
     <nav class="navbar">
@@ -187,21 +209,49 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+        <p class="footer-copy">© 2024 Code to Career - CTOC. All rights reserved.</p>
     </footer>
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/916383847631" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
 
     <script>
-       const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+        const btn = document.querySelector('.toggle-btn');
+        if (localStorage.getItem('ctoc_theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = '☀️';
+        } else {
+            btn.textContent = '🌙';
+        }
 
-document.querySelector('.hamburger').addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-});
-// Auto dark/light mode based on system
-if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    document.body.classList.add('light');
-    document.querySelector('.toggle-btn').textContent = '☀️';
-}
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            if (document.body.classList.contains('light')) {
+                localStorage.setItem('ctoc_theme', 'light');
+                document.documentElement.setAttribute('data-theme', 'light');
+                btn.textContent = '☀️';
+            } else {
+                localStorage.setItem('ctoc_theme', 'dark');
+                document.documentElement.removeAttribute('data-theme');
+                btn.textContent = '🌙';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if(nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(l => {
+            l.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
     </script>
 </body>
 </html>
