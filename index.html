@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code to Career - CTOC</title>
+    <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
+                <strong class="brand">Code to Career</strong>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">🚀 Career & Digital Solutions</span>
+            <h1 class="hero-title">
+                No Experience?<br>
+                <span class="highlight">No Problem.</span>
+            </h1>
+            <p class="hero-sub">
+                Build Real Projects. Create Your Portfolio.<br>
+                Crack Placements — Start Today!
+            </p>
+            <div class="hero-tags">
+                <span>✅ Resume Setup</span>
+                <span>✅ LinkedIn Profile</span>
+                <span>✅ Portfolio Website</span>
+                <span>✅ Placement Guidance</span>
+            </div>
+            <div class="hero-btns">
+                <a href="https://instagram.com/ctoc_careers" class="btn-primary" target="_blank">DM to Get Started →</a>
+                <a href="services.html" class="btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-card">
+                <div class="card-top">
+                    <img src="./assets/ctoc-white.png" alt="CTOC" class="card-logo">
+                    <span>Code to Career</span>
+                </div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <h3>🎯</h3>
+                        <p>Career Focused</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Beginner Friendly</p>
+                    </div>
+                    <div class="stat">
+                        <h3>🔥</h3>
+                        <p>Real Projects</p>
+                    </div>
+                </div>
+                <p class="card-tag">📍 Online • India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why CTOC -->
+    <section class="why-section">
+        <div class="section-container">
+            <span class="section-badge">Why Choose Us</span>
+            <h2 class="section-title">Why <span class="highlight">CTOC?</span></h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <span>❌</span>
+                    <h3>No Experience Needed</h3>
+                    <p>Start from absolute zero — we guide you every step of the way.</p>
+                </div>
+                <div class="why-card">
+                    <span>💻</span>
+                    <h3>No Laptop? No Problem</h3>
+                    <p>We work with what you have. Mobile-friendly guidance available.</p>
+                </div>
+                <div class="why-card">
+                    <span>🎓</span>
+                    <h3>Beginner Friendly</h3>
+                    <p>Simple, clear steps made for students with zero coding background.</p>
+                </div>
+                <div class="why-card">
+                    <span>🚀</span>
+                    <h3>Real Growth</h3>
+                    <p>Small steps today = Big career growth tomorrow. Start now!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="section-title">Ready to Start Your <span class="highlight">Career?</span></h2>
+            <p class="section-sub">DM us on Instagram — Let's build your future together!</p>
+            <a href="https://instagram.com/ctoc_careers" class="btn-primary" target="_blank">DM to Get Started →</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC" class="footer-logo">
+                <strong>Code to Career</strong>
+                <p>Build Projects. Crack Placements. 🚀</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+// Auto dark/light mode based on system
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.body.classList.add('light');
+    document.querySelector('.toggle-btn').textContent = '☀️';
+}
+    </script>
+</body>
+</html>

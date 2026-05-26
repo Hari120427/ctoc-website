@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CTOC</title>
+    <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
+                <strong class="brand">Code to Career</strong>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="section-container">
+            <span class="section-badge">Get In Touch</span>
+            <h1 class="section-title">Contact <span class="highlight">Us</span></h1>
+            <p class="section-sub">Ready to start your career journey? Reach out to us today!</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">📸</span>
+                    <h3>Instagram</h3>
+                    <p>DM us for queries and support</p>
+                    <a href="https://instagram.com/ctoc_careers" target="_blank" class="btn-primary">@ctoc_careers →</a>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">💬</span>
+                    <h3>WhatsApp</h3>
+                    <p>Direct chat for quick responses</p>
+                    <a href="https://wa.me/916383847631" target="_blank" class="btn-primary">Chat Now →</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC" class="footer-logo">
+                <strong>Code to Career</strong>
+                <p>Build Projects. Crack Placements. 🚀</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+// Auto dark/light mode based on system
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.body.classList.add('light');
+    document.querySelector('.toggle-btn').textContent = '☀️';
+}
+    </script>
+</body>
+</html>

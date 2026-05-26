@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate - CTOC</title>
+    <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
+                <strong class="brand">Code to Career</strong>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="section-container">
+            <span class="section-badge">🏆 CTOC Certified</span>
+            <h1 class="section-title">Our <span class="highlight">Certificates</span></h1>
+            <p class="section-sub">Complete our programs and earn industry-recognized certificates that prove your skills to employers.</p>
+        </div>
+    </section>
+
+    <!-- Why Certificate -->
+    <section class="section">
+        <div class="section-container">
+            <span class="section-badge">What You Get</span>
+            <h2 class="section-title">Why Our Certificate <span class="highlight">Matters?</span></h2>
+            <p class="section-sub">CTOC certificates are more than just a piece of paper — they prove real skills.</p>
+
+            <div class="cert-benefits">
+                <div class="cert-benefit-card">
+                    <span>🏆</span>
+                    <h3>Industry Recognized</h3>
+                    <p>Our certificates are designed to match what real employers look for in candidates.</p>
+                </div>
+                <div class="cert-benefit-card">
+                    <span>💼</span>
+                    <h3>Resume Boost</h3>
+                    <p>Add your CTOC certificate to your resume and LinkedIn profile to stand out from the crowd.</p>
+                </div>
+                <div class="cert-benefit-card">
+                    <span>✅</span>
+                    <h3>Skill Verified</h3>
+                    <p>Each certificate verifies that you have completed real projects and learned practical skills.</p>
+                </div>
+                <div class="cert-benefit-card">
+                    <span>🚀</span>
+                    <h3>Career Ready</h3>
+                    <p>Certificate holders get priority placement guidance and referral support from CTOC team.</p>
+                </div>
+            </div>
+
+            <!-- Certificate Sample Preview -->
+            <div class="cert-preview-section">
+                <span class="section-badge">🏅 Sample Certificate</span>
+                <h2 class="section-title" style="margin-top:12px;">What You'll <span class="highlight">Receive</span></h2>
+                <p class="section-sub">Complete our workshop and earn this official CTOC certificate — perfect for your LinkedIn & resume!</p>
+
+                <div class="cert-preview-box">
+                    <iframe
+                        src="./assets/certificate.pdf"
+                        width="100%"
+                        height="520px"
+                        style="border:none; border-radius:12px;">
+                    </iframe>
+                    <div class="cert-preview-btns">
+                        <a href="./assets/certificate.pdf"
+                           target="_blank"
+                           class="btn-primary">
+                            👁 View Full Certificate →
+                        </a>
+                        <a href="./assets/certificate.pdf"
+                           download
+                           class="btn-secondary">
+                            ⬇ Download Sample
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate Programs -->
+            <div style="margin-top:70px;">
+                <span class="section-badge">Our Programs</span>
+                <h2 class="section-title" style="margin-top:12px;">Certificate <span class="highlight">Programs</span></h2>
+                <p class="section-sub">Choose the program that fits your career goal.</p>
+
+                <div class="cert-programs">
+
+                    <div class="cert-card">
+                        <div class="cert-icon">📄</div>
+                        <div class="cert-info">
+                            <h3>Resume & Career Starter</h3>
+                            <p>Complete resume setup, LinkedIn profile, and job application guidance. Perfect for freshers.</p>
+                            <div class="cert-tags">
+                                <span>Resume</span>
+                                <span>LinkedIn</span>
+                                <span>Job Guidance</span>
+                            </div>
+                        </div>
+                        <a href="https://instagram.com/ctoc_careers" target="_blank" class="btn-primary">DM to Enroll →</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🌐</div>
+                        <div class="cert-info">
+                            <h3>Web Development & Portfolio</h3>
+                            <p>Build real projects and a personal portfolio website. Showcase your skills to the world.</p>
+                            <div class="cert-tags">
+                                <span>HTML/CSS</span>
+                                <span>Portfolio</span>
+                                <span>Real Projects</span>
+                            </div>
+                        </div>
+                        <a href="https://instagram.com/ctoc_careers" target="_blank" class="btn-primary">DM to Enroll →</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🔥</div>
+                        <div class="cert-info">
+                            <h3>MERN Stack Bootcamp</h3>
+                            <p>Full stack web development with MongoDB, Express, React and Node.js. Coming soon!</p>
+                            <div class="cert-tags">
+                                <span>MongoDB</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">🤖</div>
+                        <div class="cert-info">
+                            <h3>AI/ML Bootcamp</h3>
+                            <p>Artificial Intelligence and Machine Learning fundamentals with real-world applications.</p>
+                            <div class="cert-tags">
+                                <span>Python</span>
+                                <span>AI/ML</span>
+                                <span>Projects</span>
+                            </div>
+                        </div>
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cert-cta">
+                <h2 class="section-title">Ready to Get <span class="highlight">Certified?</span></h2>
+                <p class="section-sub">DM us on Instagram to enroll and start your journey today!</p>
+                <a href="https://instagram.com/ctoc_careers" target="_blank" class="btn-primary">DM to Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC" class="footer-logo">
+                <strong>Code to Career</strong>
+                <p>Build Projects. Crack Placements. 🚀</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+    </footer>
+
+    <script>
+       const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+// Auto dark/light mode based on system
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.body.classList.add('light');
+    document.querySelector('.toggle-btn').textContent = '☀️';
+}
+    </script>
+</body>
+</html>
