@@ -900,7 +900,7 @@ body.light .section-sub { color: #555; }
     .contact-grid { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
     .cert-benefits { grid-template-columns: 1fr 1fr; }
-    .pricing-grid { grid-template-columns: 1fr 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
     .pricing-grid.two-col { grid-template-columns: 1fr; }
     .cert-card { flex-direction: column; text-align: center; }
     .cert-tags { justify-content: center; }
@@ -911,6 +911,10 @@ body.light .section-sub { color: #555; }
     .footer-links { flex-wrap: wrap; justify-content: center; }
     .page-hero { padding: 60px 20px 30px; }
     .cert-preview-box iframe { height: 300px; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .story-content { grid-template-columns: 1fr; }
+    .numbers-section { grid-template-columns: repeat(2, 1fr); }
+    .vision-section { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
