@@ -14,15 +14,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Services - Code to Career CTOC">
     <meta property="og:description" content="CTOC services include ATS resume setup, portfolio website, LinkedIn optimization, placement guidance and more. Starting from just ₹49!">
-    <meta property="og:url" content="https://ctoc-careers.github.io/services.html">
-    <meta property="og:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta property="og:url" content="https://ctocacademy.netlify.app/services.html">
+    <meta property="og:image" content="https://ctocacademy.netlify.app/assets/ctoc-white.png">
     <meta property="og:site_name" content="Code to Career - CTOC">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Services - Code to Career CTOC">
     <meta name="twitter:description" content="CTOC services include ATS resume setup, portfolio website, LinkedIn optimization, placement guidance and more. Starting from just ₹49!">
-    <meta name="twitter:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta name="twitter:image" content="https://ctocacademy.netlify.app/assets/ctoc-white.png">
 
     <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
     <link rel="stylesheet" href="./styles.css">
@@ -164,6 +164,8 @@
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if(nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+            const st = document.getElementById('scrollTop');
+            if(st) st.classList.toggle('show', window.scrollY > 300);
         });
 
         document.querySelectorAll('.nav-links a').forEach(l => {

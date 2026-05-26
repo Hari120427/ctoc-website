@@ -14,15 +14,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contact - Code to Career CTOC">
     <meta property="og:description" content="Contact Code to Career (CTOC) on Instagram @ctoc_careers or WhatsApp 6383847631. Quick response guaranteed!">
-    <meta property="og:url" content="https://ctoc-careers.github.io/contact.html">
-    <meta property="og:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta property="og:url" content="https://ctocacademy.netlify.app/contact.html">
+    <meta property="og:image" content="https://ctocacademy.netlify.app/assets/ctoc-white.png">
     <meta property="og:site_name" content="Code to Career - CTOC">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact - Code to Career CTOC">
     <meta name="twitter:description" content="Contact Code to Career (CTOC) on Instagram @ctoc_careers or WhatsApp 6383847631. Quick response guaranteed!">
-    <meta name="twitter:image" content="https://ctoc-careers.github.io/assets/ctoc-white.png">
+    <meta name="twitter:image" content="https://ctocacademy.netlify.app/assets/ctoc-white.png">
 
     <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
     <link rel="stylesheet" href="./styles.css">
@@ -45,7 +45,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
                 <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
             </ul>
         </div>
@@ -81,7 +80,12 @@
                     <p>Direct chat for quick responses</p>
                     <a href="https://wa.me/916383847000" target="_blank" class="btn-primary">Chat Now →</a>
                 </div>
-              
+                <div class="contact-card">
+                    <span class="contact-icon">🎥</span>
+                    <h3>YouTube</h3>
+                    <p>Free tips and career guidance videos</p>
+                    <a href="#" target="_blank" class="btn-primary">Subscribe →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -98,7 +102,6 @@
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
-                <a href="pricing.html">Pricing</a>
             </div>
         </div>
         <p class="footer-copy">© 2024 Code to Career - CTOC. All rights reserved.</p>
@@ -137,6 +140,8 @@
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if(nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+            const st = document.getElementById('scrollTop');
+            if(st) st.classList.toggle('show', window.scrollY > 300);
         });
 
         document.querySelectorAll('.nav-links a').forEach(l => {
