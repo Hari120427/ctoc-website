@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - CTOC</title>
+    <link rel="icon" type="image/png" href="./assets/ctoc-white.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script>if(localStorage.getItem('ctoc_theme')==='light')document.documentElement.setAttribute('data-theme','light');</script>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
+                <strong class="brand">Code to Career</strong>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><button class="toggle-btn" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="success-section">
+        <div class="success-container">
+            <div class="success-icon">🎉</div>
+            <h1>Payment <span class="highlight">Successful!</span></h1>
+            <p class="success-sub">Thank you for choosing Code to Career! Your journey starts now.</p>
+
+            <div class="success-steps">
+                <div class="success-step">
+                    <div class="step-num">1</div>
+                    <div class="step-info">
+                        <h3>Confirm on WhatsApp</h3>
+                        <p>Send us your payment screenshot on WhatsApp to get started immediately!</p>
+                    </div>
+                </div>
+                <div class="success-step">
+                    <div class="step-num">2</div>
+                    <div class="step-info">
+                        <h3>We'll Reach Out</h3>
+                        <p>Our team will contact you within 30 minutes to begin your service.</p>
+                    </div>
+                </div>
+                <div class="success-step">
+                    <div class="step-num">3</div>
+                    <div class="step-info">
+                        <h3>Your Journey Begins!</h3>
+                        <p>Sit back and let us build your career profile professionally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-btns">
+                <a href="https://wa.me/916383847631?text=Hi%20CTOC!%20I%20have%20completed%20my%20payment.%20Please%20find%20my%20payment%20screenshot%20attached.%20Ready%20to%20get%20started!%20%F0%9F%9A%80" 
+                   target="_blank" 
+                   class="btn-whatsapp">
+                    💬 Confirm on WhatsApp →
+                </a>
+                <a href="index.html" class="btn-secondary">Back to Home</a>
+            </div>
+
+            <p class="success-note">📌 Please share your payment screenshot on WhatsApp for quick processing!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./assets/ctoc-white.png" alt="CTOC" class="footer-logo">
+                <strong>Code to Career</strong>
+                <p>Build Projects. Crack Placements. 🚀</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="pricing.html">Pricing</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Code to Career - CTOC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const btn = document.querySelector('.toggle-btn');
+        if (localStorage.getItem('ctoc_theme') === 'light') {
+            document.body.classList.add('light');
+            btn.textContent = '☀️';
+        } else {
+            btn.textContent = '🌙';
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            if (document.body.classList.contains('light')) {
+                localStorage.setItem('ctoc_theme', 'light');
+                document.documentElement.setAttribute('data-theme', 'light');
+                btn.textContent = '☀️';
+            } else {
+                localStorage.setItem('ctoc_theme', 'dark');
+                document.documentElement.removeAttribute('data-theme');
+                btn.textContent = '🌙';
+            }
+        }
+    </script>
+</body>
+</html>
