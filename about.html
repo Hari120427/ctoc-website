@@ -30,11 +30,13 @@
     <script>localStorage.getItem('ctoc_theme')==='light'&&document.documentElement.setAttribute('data-theme','light');</script>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-left">
-                <img src="./assets/ctoc-white.png" alt="CTOC Logo" class="logo">
-                <strong class="brand">Code to Career</strong>
+                <a href="index.html" class="logo-link">
+                    <span class="logo-cc">CTOC</span>
+                    <span class="logo-name">Code to Career</span>
+                </a>
             </div>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">
@@ -217,9 +219,11 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="./assets/ctoc-white.png" alt="CTOC" class="footer-logo">
-                <strong>Code to Career</strong>
-                <p>Build Projects. Crack Placements. 🚀</p>
+                <a href="index.html" class="logo-link">
+                    <span class="logo-cc">CTOC</span>
+                    <span class="logo-name">Code to Career</span>
+                </a>
+                <p style="color:#666; font-size:14px; margin-top:4px;">Build Projects. Crack Placements. 🚀</p>
             </div>
             <div class="footer-links">
                 <a href="index.html">Home</a>
